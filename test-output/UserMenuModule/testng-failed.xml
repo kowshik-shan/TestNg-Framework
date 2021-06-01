@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UserMenuModule]" guice-stage="DEVELOPMENT">
+  <test name="UserMenuTest on chrome(failed)">
+    <parameter name="sBrowserName" value="chrome"/>
+    <classes>
+      <class name="testcases.VerifyUserMenuDropdown">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="CloseDriver"/>
+          <include name="CreateReport"/>
+          <include name="TC06_MyProfile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.VerifyUserMenuDropdown -->
+    </classes>
+  </test> <!-- UserMenuTest on chrome(failed) -->
+</suite> <!-- Failed suite [UserMenuModule] -->

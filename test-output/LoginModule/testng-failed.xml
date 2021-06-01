@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginModule]" guice-stage="DEVELOPMENT">
+  <test name="LoginTest on chrome(failed)">
+    <parameter name="sBrowserName" value="chrome"/>
+    <classes>
+      <class name="testcases.VerifyLoginFunctionality">
+        <methods>
+          <include name="VerifyForgotPassword_04B" invocation-numbers="0"/>
+          <include name="CloseDriver"/>
+          <include name="CreateReport"/>
+          <include name="setBrowser"/>
+        </methods>
+      </class> <!-- testcases.VerifyLoginFunctionality -->
+    </classes>
+  </test> <!-- LoginTest on chrome(failed) -->
+</suite> <!-- Failed suite [LoginModule] -->

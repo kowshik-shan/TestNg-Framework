@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [LoginModule]">
+  <test name="LoginTest on chrome(failed)">
+    <parameter name="sBrowserName" value="chrome"/>
+    <classes>
+      <class name="testcases.VerifyLoginFunctionality_2">
+        <methods>
+          <include name="CloseDriver"/>
+          <include name="CloseDriver"/>
+          <include name="VerifyLoginToSalseForce_02" invocation-numbers="0"/>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="CreateReport"/>
+          <include name="CreateReport"/>
+        </methods>
+      </class> <!-- testcases.VerifyLoginFunctionality_2 -->
+    </classes>
+  </test> <!-- LoginTest on chrome(failed) -->
+  <test name="LoginTest on firefox(failed)">
+    <parameter name="sBrowserName" value="firefox"/>
+    <classes>
+      <class name="testcases.VerifyLoginFunctionality_2">
+        <methods>
+          <include name="CloseDriver"/>
+          <include name="CloseDriver"/>
+          <include name="VerifyLoginErrorMessage_01" invocation-numbers="0"/>
+          <include name="VerifyLoginToSalseForce_02" invocation-numbers="0"/>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="CreateReport"/>
+          <include name="CreateReport"/>
+        </methods>
+      </class> <!-- testcases.VerifyLoginFunctionality_2 -->
+    </classes>
+  </test> <!-- LoginTest on firefox(failed) -->
+</suite> <!-- Failed suite [LoginModule] -->
