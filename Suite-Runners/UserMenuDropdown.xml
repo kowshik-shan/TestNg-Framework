@@ -5,13 +5,13 @@
 		<parameter name="sBrowserName" value="chrome"></parameter>
 
 		<classes>
-			<class name="testcases.VerifyUserMenuDropdown">
+			<class name="testcases.VerifyUserMenuDropdown_POM">
 			<methods> 
-			<include name="TC05_HomePage"></include>
-			<include name="TC06_MyProfile"></include>
+			 <include name="TC05_HomePage"></include>
+			<include name="TC06_MyProfile"></include> 
 			<include name="TC07_MySettings"></include>
 			<include name="TC08_DeveloperConsole"></include>  
-			<include name=" TC09_Logout"></include>     
+			<include name="TC09_Logout"></include>     
 			</methods>
 			
 			</class>

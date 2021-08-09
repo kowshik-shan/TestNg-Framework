@@ -43,7 +43,7 @@ public class AccountsPage {
 	@FindBy(xpath = "//*[@id=\"editPage\"]/div[1]/table/tbody/tr/td[2]/input[1]")
 	public WebElement Save_NewView;
 	
-	@FindBy(xpath = "//select[@id='00B5e000005SzEv_listSelect']")
+	@FindBy(xpath = "(//select[contains(@id,'00B5e00')])[1]")
 	public WebElement NewViewAccName;
 	
 	@FindBy(xpath ="//*[@id='userNavLabel']")
@@ -70,10 +70,10 @@ public class AccountsPage {
 	@FindBy(xpath = "//body[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[2]/form[1]/div[3]/table[1]/tbody[1]/tr[1]/td[2]/input[1]")
 	public WebElement Save_EditView;
 	
-	@FindBy(xpath = "//select[@id='00B5e000001Ca6r_listSelect']")
+	@FindBy(xpath = "(//select[contains(@id,'00B5e00')])[1]")
 	public WebElement ViewBar;
 	
-	@FindBy(xpath = "//div[@id='ext-gen22']")
+	@FindBy(xpath = "//*[@id='ext-gen22']")
 	public WebElement LastActivity;
 	
 	

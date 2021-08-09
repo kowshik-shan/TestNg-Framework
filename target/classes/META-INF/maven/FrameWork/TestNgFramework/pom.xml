@@ -22,7 +22,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-							Myfirstsuite.xml
+							LoginFunctionality.xml
 						</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>

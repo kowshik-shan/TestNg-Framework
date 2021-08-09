@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.VerifyAccountsModule">
+      <class name="testcases.VerifyLoginFunctionality_POM">
         <methods>
-          <include name="TC10_CreateAccount" invocation-numbers="0"/>
+          <include name="VerifyLoginErrorMessage_01" invocation-numbers="0"/>
+          <include name="VerifyCheckRememberMe_03" invocation-numbers="0"/>
+          <include name="VerifyLoginToSalseForce_02" invocation-numbers="0"/>
+          <include name="VerifyForgotPassword_04A" invocation-numbers="0"/>
+          <include name="VerifyForgotPassword_04B" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.VerifyAccountsModule -->
+      </class> <!-- testcases.VerifyLoginFunctionality_POM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

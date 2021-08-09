@@ -5,10 +5,10 @@
 		<parameter name="sBrowserName" value="chrome"></parameter>
 
 		<classes>
-			<class name="testcases.VerifyAccountsModule">
+			<class name="testcases.VerifyAccountsModule_POM">
 			<methods> 
 			<include name="TC10_CreateAccount"></include>
-			<include name=" TC11_CreateNewView"></include>
+			<include name="TC11_CreateNewView"></include>
 			<include name="TC12_Editview"></include>
 			<include name=""></include>  
 			<include name=""></include>     

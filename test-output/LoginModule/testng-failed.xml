@@ -4,14 +4,14 @@
   <test name="LoginTest on chrome(failed)">
     <parameter name="sBrowserName" value="chrome"/>
     <classes>
-      <class name="testcases.VerifyLoginFunctionality">
+      <class name="testcases.VerifyLoginFunctionality_POM">
         <methods>
-          <include name="VerifyForgotPassword_04B" invocation-numbers="0"/>
           <include name="CloseDriver"/>
-          <include name="CreateReport"/>
+          <include name="VerifyCheckRememberMe_03" invocation-numbers="0"/>
           <include name="setBrowser"/>
+          <include name="CreateReport"/>
         </methods>
-      </class> <!-- testcases.VerifyLoginFunctionality -->
+      </class> <!-- testcases.VerifyLoginFunctionality_POM -->
     </classes>
   </test> <!-- LoginTest on chrome(failed) -->
 </suite> <!-- Failed suite [LoginModule] -->

@@ -10,6 +10,7 @@
           <include name="TC12_Editview" invocation-numbers="0"/>
           <include name="CreateReport"/>
           <include name="CloseDriver"/>
+          <include name="TC11_CreateNewView" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcases.VerifyAccountsModule -->
     </classes>

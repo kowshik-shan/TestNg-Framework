@@ -5,7 +5,7 @@
 		<parameter name="sBrowserName" value="chrome"></parameter>
 
 		<classes>
-			<class name="testcases.VerifyLoginFunctionality">
+			<class name="testcases.VerifyLoginFunctionality_POM">
 			<methods>
 			<include name="VerifyLoginErrorMessage_01"></include>
 			<include name="VerifyLoginToSalseForce_02"></include>

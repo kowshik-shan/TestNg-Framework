@@ -21,7 +21,7 @@ public class UserMenupage {
 	@FindBy(xpath = "//*[@id='tailBreadcrumbNode']")
 	public WebElement Contact;
 	
-	@FindBy(xpath = "//*[@id='chatterTab']/div[2]/div[2]/div[1]/h3/div/div/a")
+	@FindBy(xpath = "//*[@id='chatterTab']/div[2]/div[2]/div[1]/h3/div/div/a/img")
 	public WebElement EditProfile;
 	
 	@FindBy(xpath = "//iframe[@id='contactInfoContentId']")
@@ -45,16 +45,25 @@ public class UserMenupage {
 	@FindBy(xpath = "//tbody/tr[1]/td[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/span[1]")
 	public WebElement Post;
 	
+	/*@FindBy(xpath = "//iframe[@title='Rich Text Editor, publisherRichTextEditor']")
+	public WebElement Post_iFrame;*/
+	
+	/*@FindBy(xpath = "//*[@id='cke_39_contents']/iframe")
+	public WebElement Post_iFrame;*/
+	
 	@FindBy(xpath = "//tbody/tr[1]/td[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/iframe[1]")
 	public WebElement Post_iFrame;
 	
 	@FindBy(xpath = "/html/body")
 	public WebElement Message;
 	
+	/*@FindBy(xpath = "//iframe[@title='Rich Text Editor, publisherRichTextEditor']")
+	public WebElement Message;*/
+	
 	@FindBy(xpath = "//input[@id='publishersharebutton']")
 	public WebElement Share;
 	
-	@FindBy(xpath = "//p[contains(text(),'Hello world I am learning Selenium')]")
+	@FindBy(xpath ="(//p[contains(text(),'Hello world')][1])")
 	public WebElement PostDisplay; 
 	
 	@FindBy(xpath = "//tbody/tr[1]/td[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]")
@@ -69,7 +78,7 @@ public class UserMenupage {
 	@FindBy(xpath = "//input[@id='publishersharebutton']")
 	public WebElement File_Share;
 	
-	@FindBy(xpath = "displayBadge")
+	@FindBy(id = "displayBadge")
 	public WebElement Photo;
 	
 	@FindBy(xpath = "//a[@id='uploadLink']")
@@ -155,6 +164,15 @@ public class UserMenupage {
 	
 	@FindBy(xpath = "//a[contains(text(),'Logout')]")
 	public WebElement Logout;
+	
+	@FindBy(xpath = "//*[@id=\"duel\"]/table/tbody/tr/td[3]/div/label")
+	public WebElement SelectedTabs;
+	
+	@FindBy(xpath = "//*[@id=\"duel_select_0_left\"]/img")
+	public WebElement Remove;
+	
+	@FindBy(xpath = "(//span[contains(text(),'MyFirstFile')])[1]")
+	public WebElement File_Post;
 	
 	
 	

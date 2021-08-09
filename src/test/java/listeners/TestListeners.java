@@ -29,15 +29,18 @@ public class TestListeners extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-
+		System.out.println(result.getTestName() + ": TEST PASSES");
 		System.out.println("close report");
 		test.pass(result.getName() + "is Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Capture Screenshot");
+		System.out.println(result.getTestName() + ": TEST FAILED");
 		test.fail(result.getName()+ "is failed");
+		System.out.println(result.getThrowable().getMessage());
+		System.out.println(result.getThrowable().getStackTrace());
+	
 		try {
 			test.addScreenCaptureFromPath(oCommonUtilities.takeScreenshot());
 		} catch (IOException e) {
@@ -55,6 +58,7 @@ public class TestListeners extends BaseTest implements ITestListener {
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		System.out.println("Test case is failed");
+		
 
 	}
 

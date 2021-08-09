@@ -4,14 +4,14 @@
   <test name="UserMenuTest on chrome(failed)">
     <parameter name="sBrowserName" value="chrome"/>
     <classes>
-      <class name="testcases.VerifyUserMenuDropdown">
+      <class name="testcases.VerifyUserMenuDropdown_POM">
         <methods>
-          <include name="setBrowser"/>
           <include name="CloseDriver"/>
           <include name="CreateReport"/>
-          <include name="TC06_MyProfile" invocation-numbers="0"/>
+          <include name="TC09_Logout" invocation-numbers="0"/>
+          <include name="setBrowser"/>
         </methods>
-      </class> <!-- testcases.VerifyUserMenuDropdown -->
+      </class> <!-- testcases.VerifyUserMenuDropdown_POM -->
     </classes>
   </test> <!-- UserMenuTest on chrome(failed) -->
 </suite> <!-- Failed suite [UserMenuModule] -->

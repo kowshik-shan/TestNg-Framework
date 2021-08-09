@@ -164,14 +164,25 @@ public class BaseTest {
 		System.out.println("Switched to iframe");
 	}
 	
-	public  void SelectByText(WebElement ele, String objName) {
+	public  boolean SelectByText(WebElement ele, String objName) {
 		System.out.println(objName);
-
+try {
 		Select select = new Select(ele);
 		select.selectByVisibleText(objName);
 		test.info(objName + " is Selected");
+		return true;
+} 
+catch(Exception e){
+	return false;
 	}
-
+	}
+	public String getSelectedObject(WebElement ele)
+	{
+		Select select = new Select(ele);
+		if(select.getFirstSelectedOption() != null)
+			return select.getFirstSelectedOption().getText();
+		return "";
+	}
 	public  void SelectByValue(WebElement ele, String value) {
 		Select select = new Select(ele);
 		select.selectByValue(value);
